@@ -204,7 +204,10 @@ class IBANGenerator {
             digit = 1;
         }else if(digit == 11){
             digit = 0;
+        }else{
+            digit = digit - 1;
         }
+
         return String.valueOf(digit);
     }
 }
